@@ -1,0 +1,39 @@
+{
+  "name": "with-typescript",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc",
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
+  },
+  "dependencies": {
+    "@babel/core": "^7.20.12",
+    "@chakra-ui/react": "^2.4.9",
+    "@emotion/core": "^10.0.28",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.0.0",
+    "@fontsource/nunito-sans": "^4.5.10",
+    "@mdi/js": "^7.1.96",
+    "emotion-theming": "^10.0.27",
+    "framer-motion": "^8.5.5",
+    "next": "latest",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.21",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^3.4.0",
+    "@typescript-eslint/parser": "^3.4.0",
+    "eslint": "^7.3.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.0",
+    "prettier": "^2.0.5",
+    "typescript": "3.7.3"
+  },
+  "license": "ISC"
+}
