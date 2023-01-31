@@ -6,12 +6,12 @@ import {
   Flex,
   Grid,
   GridItem,
-  Text,
   Icon,
+  Text,
 } from "@chakra-ui/react";
+import { mdiHeart } from "@mdi/js";
 
 import TestCard from "./testcard";
-import { mdiHeart } from "@mdi/js";
 
 const Home = () => {
   return (
