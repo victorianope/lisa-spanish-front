@@ -1,6 +1,7 @@
-import { Box, Container, Flex, Icon, Text } from "@chakra-ui/react";
-import { mdiBookOpenPageVariantOutline } from "@mdi/js";
 import Router from "next/router";
+
+import { Container, Flex, Icon, Text } from "@chakra-ui/react";
+import { mdiBookOpenPageVariantOutline } from "@mdi/js";
 
 const Header = () => (
   <Container maxWidth={{ base: "95%", lg: "90%", xl: "85%" }}>
@@ -18,9 +19,6 @@ const Header = () => (
           Handbook
         </Text>
       </Flex>
-      {/* <Flex>
-      <Text>Start</Text>
-    </Flex> */}
     </Flex>
   </Container>
 );
