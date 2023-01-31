@@ -1,17 +1,8 @@
 import Link from "next/link";
-
-import {
-  Box,
-  Button,
-  Center,
-  Flex,
-  Icon,
-  Image,
-  SimpleGrid,
-  Text,
-} from "@chakra-ui/react";
-import { mdiBookOpenPageVariantOutline, mdiGoogle } from "@mdi/js";
 import Router from "next/router";
+
+import { Box, Flex, Icon, SimpleGrid, Text } from "@chakra-ui/react";
+import { mdiBookOpenPageVariantOutline } from "@mdi/js";
 
 const Footer = () => (
   <SimpleGrid
