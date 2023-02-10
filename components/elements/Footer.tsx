@@ -12,7 +12,6 @@ const Footer = () => (
     pt={8}
     pb={12}
     px={12}
-    mt={4}
     borderTopWidth={'2px'}
     borderBottomWidth={'2px'}
     borderColor={'#70829B20'}

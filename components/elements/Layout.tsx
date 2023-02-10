@@ -14,7 +14,13 @@ const Layout = ({
   title: string;
   showFooter?: boolean;
 }) => (
-  <div>
+  <div
+    style={{
+      height: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
+    }}
+  >
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
@@ -24,7 +30,7 @@ const Layout = ({
 
     <Header />
 
-    <Box>{children}</Box>
+    <Box flex={1}>{children}</Box>
 
     {showFooter && (
       <Box /* position={'fixed'} left={0} bottom={0} width={'100%'} */>
