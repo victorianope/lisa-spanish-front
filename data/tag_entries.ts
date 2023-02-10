@@ -1,3 +1,1 @@
-import { TagEntry } from '../interfaces';
-
-export const NOUN_ENTRIES: TagEntry[] = [{ english: '' }];
+export const TAG_ENTRIES: string[] = ['Lorem', 'Ipsum', 'Dolor', 'Sit', 'Amet'];

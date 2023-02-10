@@ -1,10 +1,6 @@
 export type WordType = 'noun' | 'verb';
 export type VerbTenseType = 'present';
 
-export interface TagEntry {
-  english: string;
-}
-
 export interface NounEntry {
   spanish: string;
   english: string;

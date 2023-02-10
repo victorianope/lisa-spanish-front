@@ -1,3 +1,4 @@
+import { Box } from '@chakra-ui/react';
 import Head from 'next/head';
 import React, { ReactNode } from 'react';
 
@@ -23,9 +24,13 @@ const Layout = ({
 
     <Header />
 
-    {children}
+    <Box>{children}</Box>
 
-    {showFooter && <Footer />}
+    {showFooter && (
+      <Box position={'fixed'} left={0} bottom={0} width={'100%'}>
+        <Footer />
+      </Box>
+    )}
   </div>
 );
 

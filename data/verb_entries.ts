@@ -1,6 +1,6 @@
 import { VerbEntry } from '../interfaces';
 
-export const NOUN_ENTRIES: VerbEntry[] = [
+export const VERB_ENTRIES: VerbEntry[] = [
   {
     spanish: '',
     english: '',
