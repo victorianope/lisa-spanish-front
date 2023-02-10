@@ -91,7 +91,10 @@ const StudyHome = () => {
             })
             .map((tagItem, tagIndex) => {
               return (
-                <WrapItem cursor={'pointer'} onClick={() => Router.push(`/study/${tagItem}`)}>
+                <WrapItem
+                  cursor={'pointer'}
+                  onClick={() => Router.push(`/study/${tagItem.title.toLocaleLowerCase()}`)}
+                >
                   <Box
                     key={tagIndex}
                     borderRadius={'14px'}
