@@ -27,7 +27,7 @@ const Layout = ({
     <Box>{children}</Box>
 
     {showFooter && (
-      <Box position={'fixed'} left={0} bottom={0} width={'100%'}>
+      <Box /* position={'fixed'} left={0} bottom={0} width={'100%'} */>
         <Footer />
       </Box>
     )}
