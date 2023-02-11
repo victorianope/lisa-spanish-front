@@ -1,4 +1,4 @@
-import { Box, Container, Text, Flex, Wrap, WrapItem } from '@chakra-ui/react';
+import { Box, Container, Text, Flex, Wrap, WrapItem, Tooltip } from '@chakra-ui/react';
 import Router from 'next/router';
 import { useEffect, useState } from 'react';
 import { NOUN_ENTRIES } from '../../data/noun_entries';
@@ -51,7 +51,7 @@ const StudyHome = () => {
 
   return (
     <Container maxWidth={{ base: '100%', lg: '90%', xl: '85%' }}>
-      <Box textColor={'#1d1d1d'} my={'128px'} px={{ base: 8, lg: 0 }}>
+      <Box textColor={'#1d1d1d'} mt={'64px'} mb={'64px'} px={{ base: 8, lg: 0 }}>
         <Box as={'span'} lineHeight={1.2} fontSize={64} fontWeight={700}>
           Study
         </Box>
@@ -92,20 +92,25 @@ const StudyHome = () => {
             .map((tagItem, tagIndex) => {
               return (
                 <WrapItem
-                  cursor={'pointer'}
-                  onClick={() => Router.push(`/study/${tagItem.title.toLocaleLowerCase()}`)}
+                  cursor={tagItem.amount !== 0 ? 'pointer' : 'not-allowed'}
+                  onClick={() => {
+                    if (tagItem.amount === 0) return;
+                    Router.push(`/study/${tagItem.title.toLocaleLowerCase()}`);
+                  }}
                 >
-                  <Box
-                    key={tagIndex}
-                    borderRadius={'14px'}
-                    bgColor={'#38A169'}
-                    textColor={'white'}
-                    fontSize={'24px'}
-                    px={4}
-                    py={1}
-                  >
-                    {tagItem.title}
-                  </Box>
+                  <Tooltip label={`${tagItem.amount} word${tagItem.amount !== 1 ? 's' : ''}`}>
+                    <Box
+                      key={tagIndex}
+                      borderRadius={'14px'}
+                      bgColor={'#38A169'}
+                      textColor={'white'}
+                      fontSize={'24px'}
+                      px={4}
+                      py={1}
+                    >
+                      {tagItem.title}
+                    </Box>
+                  </Tooltip>
                 </WrapItem>
               );
             })}
