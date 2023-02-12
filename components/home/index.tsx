@@ -32,6 +32,9 @@ const Home = () => (
       <Flex justifyContent={{ base: 'center', lg: 'end' }}>
         <TestCard title={'Tests'} image={studyImage.src} link={'/tests'} />
       </Flex>
+      <Flex justifyContent={{ base: 'center', lg: 'end' }}>
+        <TestCard title={'Create Summary'} image={studyImage.src} link={'/summary'} />
+      </Flex>
     </SimpleGrid>
   </Container>
 );
