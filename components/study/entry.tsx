@@ -1,4 +1,4 @@
-import { Box, Container, Text, Flex, Wrap, WrapItem, Tooltip, Input } from '@chakra-ui/react';
+import { Box, Container } from '@chakra-ui/react';
 import { NounEntry } from '../../interfaces';
 import { StudyTable } from './table';
 
