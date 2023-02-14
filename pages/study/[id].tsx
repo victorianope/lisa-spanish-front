@@ -10,6 +10,11 @@ const StudySelectedCategoryPage = () => {
   const router = useRouter();
 
   const { id } = router.query;
+
+  if (!id) {
+    return;
+  }
+
   const tagName = `${(id as string)[0].toLocaleUpperCase()}${(id as string).slice(1)}`;
 
   if (!TAG_ENTRIES.includes(tagName)) {
