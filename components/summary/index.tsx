@@ -35,7 +35,7 @@ const PrintableSummary = ({ entries }: { entries: SummaryInterface[] }) => (
           return (
             <Tr key={entryKey}>
               <Td>{entryItem.english}</Td>
-              <Td>{entryItem.english}</Td>
+              <Td>{entryItem.german}</Td>
             </Tr>
           );
         })}
