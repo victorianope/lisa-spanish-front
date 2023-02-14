@@ -30,7 +30,9 @@ const Layout = ({
 
     <Header />
 
-    <Box flex={1}>{children}</Box>
+    <Box flex={1} bgColor={'#c7e1d9'}>
+      {children}
+    </Box>
 
     {showFooter && (
       <Box /* position={'fixed'} left={0} bottom={0} width={'100%'} */>

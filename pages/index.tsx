@@ -1,10 +1,10 @@
-import { Box } from "@chakra-ui/react";
+import { Box } from '@chakra-ui/react';
 
-import Layout from "../components/elements/Layout";
-import Home from "../components/home";
+import Layout from '../components/elements/Layout';
+import Home from '../components/home';
 
 const HomePage = () => (
-  <Box bgColor={"#c7e1d9"}>
+  <Box bgColor={'#c7e1d9'}>
     <Layout title="Home / Lisa's Handbook" showFooter>
       <Home />
     </Layout>
