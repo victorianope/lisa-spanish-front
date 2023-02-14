@@ -7,7 +7,6 @@ import {
   TableContainer,
   Tbody,
   Td,
-  Tfoot,
   Th,
   Thead,
   Tooltip,
@@ -20,7 +19,7 @@ import { NounEntry } from '../../interfaces';
 import { mdiCommentCheck, mdiCommentRemove } from '@mdi/js';
 
 export const StudyTable = ({ entryList }: { entryList: NounEntry[] }) => {
-  const [currPage, setCurrPage] = useState<number>(0);
+  const [currPage] = useState<number>(0);
 
   return (
     <Box>
